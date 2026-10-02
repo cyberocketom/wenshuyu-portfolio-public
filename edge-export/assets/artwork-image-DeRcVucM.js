@@ -1,0 +1,1 @@
+var e=/\.(avif|gif|jpe?g|png|webp)$/i;function t(t){return t.images.filter(t=>e.test(t))}function n(n,r){let i=(t(n)[r]||``).match(e)?.[1]?.toLowerCase(),a=i===`jpeg`?`jpg`:i||`jpg`;return`/artwork/${encodeURIComponent(n.slug)}/${String(r+1).padStart(2,`0`)}.${a}`}export{t as n,n as t};
